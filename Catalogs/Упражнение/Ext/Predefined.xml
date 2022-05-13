@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.13">
+	<Item id="1eb4600b-2dfd-43f9-896f-c3168b88da08">
+		<Name>ГаккПриседанияВТренажере</Name>
+		<Code/>
+		<Description>Гакк-приседания в тренажере</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a2e17bab-52c9-482c-bf75-07b33cbd46de">
+		<Name>ЖимНогамиВТренажере</Name>
+		<Code/>
+		<Description>Жим ногами в тренажере</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6ecca432-a1b5-4913-ab0c-ae419f08eeaa">
+		<Name>ЖимШтангиЛежа</Name>
+		<Code/>
+		<Description>Жим штанги лежа</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6267c0e4-42f0-4f73-9adb-7e481d4f64d2">
+		<Name>ОтжиманияОтПола</Name>
+		<Code/>
+		<Description>Отжимания от пола</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="62e56e1f-a2ed-457a-8e32-1302ded61c99">
+		<Name>ПодтягиванияНаПерекладине</Name>
+		<Code/>
+		<Description>Подтягивания на перекладине</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cf528105-d018-4be0-a825-9f53a5bd41ee">
+		<Name>ПрессПодъемНог</Name>
+		<Code/>
+		<Description>Подъем ног (Пресс)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cb004b6b-27af-4f16-90c4-545f8d22328a">
+		<Name>ПодъемШтангиНаБицепс</Name>
+		<Code/>
+		<Description>Подъем штанги на бицепс</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a31a557c-b5fd-4aa7-ad88-99e701804729">
+		<Name>ПриседанияБезВеса</Name>
+		<Code/>
+		<Description>Приседания без веса</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0267c996-73fd-4c44-a912-4eaa61bc9f48">
+		<Name>РазгибаниеРукСВерхнегоБлока</Name>
+		<Code/>
+		<Description>Разгибание рук с верхнего блока</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

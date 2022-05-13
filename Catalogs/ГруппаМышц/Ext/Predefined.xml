@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.13">
+	<Item id="c4dacccb-0747-417c-a5e8-c2740a2b368b">
+		<Name>Грудные</Name>
+		<Code/>
+		<Description>Грудные</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="07868bc4-dd7b-4bcb-8dac-4e4f05bf7dfa">
+		<Name>Ноги</Name>
+		<Code/>
+		<Description>Ноги</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b3c93db0-f3d6-407f-8a36-e06c55a59612">
+		<Name>Спина</Name>
+		<Code/>
+		<Description>Спина</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ЛеваяКолонка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Левая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ЛеваяКолонкаРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<InputField name="Номер" id="5">
+							<DataPath>Объект.Number</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НомерКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="7"/>
+						</InputField>
+						<InputField name="Дата" id="8">
+							<DataPath>Объект.Date</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="10"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПраваяКолонка" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПраваяКолонкаРасширеннаяПодсказка" id="12"/>
+					<ChildItems>
+						<InputField name="ФИО" id="13">
+							<DataPath>Объект.Спортсмен</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ФИОКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ФИОРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="Комментарий" id="16">
+							<DataPath>Объект.Комментарий</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="18"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ЖурналТренировок" id="19">
+			<Representation>List</Representation>
+			<HeaderHeight>2</HeaderHeight>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ЖурналТренировок</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЖурналТренировокКонтекстноеМеню" id="20"/>
+			<AutoCommandBar name="ЖурналТренировокКоманднаяПанель" id="21"/>
+			<ExtendedTooltip name="ЖурналТренировокРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="ЖурналТренировокСтрокаПоиска" id="23">
+				<AdditionSource>
+					<Item>ЖурналТренировок</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЖурналТренировокСтрокаПоискаКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ЖурналТренировокСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЖурналТренировокСостояниеПросмотра" id="26">
+				<AdditionSource>
+					<Item>ЖурналТренировок</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЖурналТренировокСостояниеПросмотраКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ЖурналТренировокСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЖурналТренировокУправлениеПоиском" id="29">
+				<AdditionSource>
+					<Item>ЖурналТренировок</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЖурналТренировокУправлениеПоискомКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ЖурналТренировокУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ЖурналТренировокНомерСтроки" id="32">
+					<DataPath>Объект.ЖурналТренировок.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>1</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>1</MaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ЖурналТренировокНомерСтрокиКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ЖурналТренировокНомерСтрокиРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<ColumnGroup name="ЖурналТренировокГруппа1" id="50" DisplayImportance="VeryHigh">
+					<HorizontalStretch>true</HorizontalStretch>
+					<ExtendedTooltip name="ЖурналТренировокГруппа1РасширеннаяПодсказка" id="51"/>
+					<ChildItems>
+						<InputField name="ЖурналТренировокУпражнение" id="35" DisplayImportance="VeryHigh">
+							<DataPath>Объект.ЖурналТренировок.Упражнение</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ЖурналТренировокУпражнениеКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ЖурналТренировокУпражнениеРасширеннаяПодсказка" id="37"/>
+						</InputField>
+						<InputField name="ЖурналТренировокСтиль" id="38" DisplayImportance="VeryHigh">
+							<DataPath>Объект.ЖурналТренировок.Стиль</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ЖурналТренировокСтильКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ЖурналТренировокСтильРасширеннаяПодсказка" id="40"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="ЖурналТренировокПовторы" id="41">
+					<DataPath>Объект.ЖурналТренировок.Повторы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Повторы</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<MaxWidth>2</MaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ЖурналТренировокПовторыКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ЖурналТренировокПовторыРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ЖурналТренировокКомментарий" id="47" DisplayImportance="VeryLow">
+					<DataPath>Объект.ЖурналТренировок.Комментарий</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ЖурналТренировокКомментарийКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ЖурналТренировокКомментарийРасширеннаяПодсказка" id="49"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Тренировка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.13">
+	<Item id="7b62ada7-caa0-4557-9a00-9b6627856f77">
+		<Name>БМВ</Name>
+		<Code/>
+		<Description>БМВ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ae899a6e-d55c-4f76-ace3-6eb18bd34109">
+		<Name>Легко</Name>
+		<Code/>
+		<Description>Легко</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5726d264-81d3-4dac-8a0b-eb93e1cba457">
+		<Name>ММВ</Name>
+		<Code/>
+		<Description>ММВ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="07b7a062-9062-43fa-bf7d-f14ac94b6246">
+		<Name>Разминка</Name>
+		<Code/>
+		<Description>Разминка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d4fc8d84-21f7-4a48-999b-d43d2ea17244">
+		<Name>Сила</Name>
+		<Code/>
+		<Description>Сила</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

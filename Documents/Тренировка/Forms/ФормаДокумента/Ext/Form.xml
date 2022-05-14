@@ -141,20 +141,33 @@
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>
-				<InputField name="ЖурналТренировокПовторы" id="41">
-					<DataPath>Объект.ЖурналТренировок.Повторы</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Повторы</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<MaxWidth>2</MaxWidth>
-					<HorizontalStretch>false</HorizontalStretch>
-					<ContextMenu name="ЖурналТренировокПовторыКонтекстноеМеню" id="42"/>
-					<ExtendedTooltip name="ЖурналТренировокПовторыРасширеннаяПодсказка" id="43"/>
-				</InputField>
+				<ColumnGroup name="ЖурналТренировокГруппа2" id="52">
+					<ExtendedTooltip name="ЖурналТренировокГруппа2РасширеннаяПодсказка" id="53"/>
+					<ChildItems>
+						<InputField name="ЖурналТренировокВес" id="54">
+							<DataPath>Объект.ЖурналТренировок.Вес</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ЖурналТренировокВесКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="ЖурналТренировокВесРасширеннаяПодсказка" id="56"/>
+						</InputField>
+						<InputField name="ЖурналТренировокПовторы" id="41">
+							<DataPath>Объект.ЖурналТренировок.Повторы</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Повт
+оры</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<MaxWidth>2</MaxWidth>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ЖурналТренировокПовторыКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ЖурналТренировокПовторыРасширеннаяПодсказка" id="43"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
 				<InputField name="ЖурналТренировокКомментарий" id="47" DisplayImportance="VeryLow">
 					<DataPath>Объект.ЖурналТренировок.Комментарий</DataPath>
 					<Title>

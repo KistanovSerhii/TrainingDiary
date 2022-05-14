@@ -5,6 +5,7 @@
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
@@ -33,12 +34,6 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ЛеваяКолонкаРасширеннаяПодсказка" id="4"/>
 					<ChildItems>
-						<InputField name="Номер" id="5">
-							<DataPath>Объект.Number</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="НомерКонтекстноеМеню" id="6"/>
-							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="7"/>
-						</InputField>
 						<InputField name="Дата" id="8">
 							<DataPath>Объект.Date</DataPath>
 							<EditMode>EnterOnInput</EditMode>
@@ -65,11 +60,17 @@
 							<ContextMenu name="ФИОКонтекстноеМеню" id="14"/>
 							<ExtendedTooltip name="ФИОРасширеннаяПодсказка" id="15"/>
 						</InputField>
-						<InputField name="Комментарий" id="16">
+						<InputField name="ПриоритетныеГруппы" id="63">
+							<DataPath>Объект.ПриоритетныеГруппы</DataPath>
+							<ContextMenu name="ПриоритетныеГруппыКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="ПриоритетныеГруппыРасширеннаяПодсказка" id="65"/>
+						</InputField>
+						<InputField name="Комментарий" id="60">
 							<DataPath>Объект.Комментарий</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="КомментарийКонтекстноеМеню" id="17"/>
-							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="18"/>
+							<MaxHeight>2</MaxHeight>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="62"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
@@ -151,20 +152,25 @@
 							<ContextMenu name="ЖурналТренировокВесКонтекстноеМеню" id="55"/>
 							<ExtendedTooltip name="ЖурналТренировокВесРасширеннаяПодсказка" id="56"/>
 						</InputField>
-						<InputField name="ЖурналТренировокПовторы" id="41">
-							<DataPath>Объект.ЖурналТренировок.Повторы</DataPath>
+						<InputField name="ЖурналТренировокСделано" id="41">
+							<DataPath>Объект.ЖурналТренировок.Сделано</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Повт
-оры</v8:content>
+									<v8:content>Сделано</v8:content>
 								</v8:item>
 							</Title>
 							<EditMode>EnterOnInput</EditMode>
 							<MaxWidth>2</MaxWidth>
 							<HorizontalStretch>false</HorizontalStretch>
-							<ContextMenu name="ЖурналТренировокПовторыКонтекстноеМеню" id="42"/>
-							<ExtendedTooltip name="ЖурналТренировокПовторыРасширеннаяПодсказка" id="43"/>
+							<ContextMenu name="ЖурналТренировокСделаноКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ЖурналТренировокСделаноРасширеннаяПодсказка" id="43"/>
+						</InputField>
+						<InputField name="ЖурналТренировокЕдИзм" id="57">
+							<DataPath>Объект.ЖурналТренировок.ЕдИзм</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЖурналТренировокЕдИзмКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="ЖурналТренировокЕдИзмРасширеннаяПодсказка" id="59"/>
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>

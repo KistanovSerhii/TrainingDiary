@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.13">
+	<Item id="87829d37-e09d-4c74-8cf3-05c07d73f1d7">
+		<Name>Км</Name>
+		<Code/>
+		<Description>Км</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="10da7560-8989-4a9b-b9d2-1174c7fe48a3">
+		<Name>Метров</Name>
+		<Code/>
+		<Description>Метров</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c84d2329-75a6-4dc0-b8a6-dd0f0fb4352e">
+		<Name>Раз</Name>
+		<Code/>
+		<Description>Раз</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="602a8fc3-6510-434b-af7e-b09def8a2435">
+		<Name>Секунд</Name>
+		<Code/>
+		<Description>Секунд</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8fa95bd9-000b-4cf7-b2a0-5e389673b603">
+		<Name>Серии</Name>
+		<Code/>
+		<Description>Серии</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

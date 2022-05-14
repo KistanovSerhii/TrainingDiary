@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
-	<Subsystem uuid="301f3681-4ff9-4e5c-b578-0310327be8b2">
+	<Subsystem uuid="40b2f206-3e63-4367-9a90-6fc93437ef71">
 		<Properties>
-			<Name>Справочник</Name>
+			<Name>Отчеты</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Справочник</v8:content>
+					<v8:content>Отчеты</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -15,9 +15,8 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Упражнение</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Спортсмен</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЕдиницаИзмерения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОбъемРаботыЗаПериод</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">7a224cb0-0613-49f1-8213-122a27f14108</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

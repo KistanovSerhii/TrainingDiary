@@ -22,6 +22,8 @@
 			<ExtendedTooltip name="ОтслеживатьРасширеннаяПодсказка" id="9"/>
 		</CheckBoxField>
 		<Table name="Антропометрия" id="10">
+			<Enabled>false</Enabled>
+			<ReadOnly>true</ReadOnly>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Антропометрия</DataPath>

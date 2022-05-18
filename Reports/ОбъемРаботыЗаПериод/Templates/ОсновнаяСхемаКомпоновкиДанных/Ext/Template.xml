@@ -30,6 +30,9 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Спортсмен</dataPath>
 			<field>Спортсмен</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>День</dataPath>
@@ -90,15 +93,17 @@
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	НАЧАЛОПЕРИОДА(ТренировкаОстаткиИОбороты.Период, ДЕНЬ) КАК День,
+	ТренировкаОстаткиИОбороты.Спортсмен КАК Спортсмен,
 	ТренировкаОстаткиИОбороты.Упражнение КАК Упражнение,
 	ТренировкаОстаткиИОбороты.Стиль КАК Стиль,
 	ТренировкаОстаткиИОбороты.ЕдИзм КАК ЕдИзм,
 	СУММА(ТренировкаОстаткиИОбороты.СделаноПриход) КАК Сделано,
 	СУММА(ТренировкаОстаткиИОбороты.ВесПриход) КАК Вес
 ИЗ
-	РегистрНакопления.Тренировка.ОстаткиИОбороты({&amp;ДатаНачала}, {&amp;ДатаОкончания}, День, , ) КАК ТренировкаОстаткиИОбороты
+	РегистрНакопления.Тренировка.ОстаткиИОбороты({&amp;ДатаНачала}, {&amp;ДатаОкончания}, День, , Спортсмен = &amp;Спортсмен ) КАК ТренировкаОстаткиИОбороты
 
 СГРУППИРОВАТЬ ПО
+	ТренировкаОстаткиИОбороты.Спортсмен,
 	ТренировкаОстаткиИОбороты.Упражнение,
 	ТренировкаОстаткиИОбороты.Стиль,
 	ТренировкаОстаткиИОбороты.ЕдИзм,
@@ -187,6 +192,20 @@
 		<useRestriction>true</useRestriction>
 		<expression>&amp;Период.ДатаОкончания</expression>
 	</parameter>
+	<parameter>
+		<name>Спортсмен</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Спортсмен</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Спортсмен</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
@@ -246,6 +265,11 @@
 						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
 					</dcscor:value>
 					<dcsset:userSettingID>37a4e8d1-157d-46cb-a589-e3852c8c2213</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Спортсмен</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>2f12b990-bd89-471c-a276-93131f61431a</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>

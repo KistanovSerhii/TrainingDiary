@@ -10,6 +10,9 @@
 		<Command name="Catalog.ЕдиницаИзмерения.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
+		<Command name="InformationRegister.КонтрольВосстановления.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
 	</CommandsOrder>
 	<GroupsOrder>
 		<Group>NavigationPanelOrdinary</Group>

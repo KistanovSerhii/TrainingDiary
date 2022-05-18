@@ -80,7 +80,7 @@
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-			<DefaultObjectForm/>
+			<DefaultObjectForm>ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm/>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
@@ -103,6 +103,8 @@
 			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
 	</ChartOfCharacteristicTypes>
 </MetaDataObject>

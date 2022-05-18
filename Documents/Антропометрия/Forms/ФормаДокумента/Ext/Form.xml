@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Дата" id="1">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Спортсмен" id="4">
+			<DataPath>Объект.Спортсмен</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СпортсменКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="СпортсменРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Table name="Замеры" id="7">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Замеры</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЗамерыКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="ЗамерыКоманднаяПанель" id="9"/>
+			<ExtendedTooltip name="ЗамерыРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="ЗамерыСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>Замеры</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗамерыСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ЗамерыСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЗамерыСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>Замеры</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗамерыСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ЗамерыСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЗамерыУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>Замеры</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗамерыУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ЗамерыУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ЗамерыНомерСтроки" id="20">
+					<DataPath>Объект.Замеры.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗамерыНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ЗамерыНомерСтрокиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<InputField name="ЗамерыНаименование" id="23">
+					<DataPath>Объект.Замеры.Наименование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗамерыНаименованиеКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ЗамерыНаименованиеРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ЗамерыЗначение" id="26">
+					<DataPath>Объект.Замеры.Значение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗамерыЗначениеКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ЗамерыЗначениеРасширеннаяПодсказка" id="28"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Антропометрия</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

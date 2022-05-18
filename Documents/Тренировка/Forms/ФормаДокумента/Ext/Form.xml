@@ -67,6 +67,7 @@
 						</InputField>
 						<InputField name="Комментарий" id="60">
 							<DataPath>Объект.Комментарий</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
 							<MaxHeight>2</MaxHeight>
 							<HorizontalStretch>true</HorizontalStretch>
 							<ContextMenu name="КомментарийКонтекстноеМеню" id="61"/>

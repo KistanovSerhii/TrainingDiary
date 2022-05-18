@@ -17,7 +17,6 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Упражнение</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Спортсмен</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЕдиницаИзмерения</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -18,6 +18,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КонтрольВосстановления</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Стиль</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппаМышц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЕдиницаИзмерения</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

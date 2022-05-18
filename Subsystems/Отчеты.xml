@@ -16,7 +16,7 @@
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ОбъемРаботыЗаПериод</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">7a224cb0-0613-49f1-8213-122a27f14108</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Антропометрия</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

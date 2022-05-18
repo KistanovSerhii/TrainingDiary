@@ -15,9 +15,12 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">54a966b2-5e8a-445b-a9fc-0da80492f0f1</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КнопкаТренироватьУровень1</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Тренировка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Антропометрия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СвоеЗначение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">eea6c649-448c-4869-b7df-bbfe4399e4a2</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

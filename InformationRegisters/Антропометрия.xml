@@ -1,42 +1,42 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
-	<InformationRegister uuid="45e09394-6c05-4170-af2e-15c2064f8f4d">
+	<InformationRegister uuid="6433eab8-45d9-4f5c-83a7-999986ebbc46">
 		<InternalInfo>
-			<xr:GeneratedType name="InformationRegisterRecord.КонтрольВосстановления" category="Record">
-				<xr:TypeId>445ae3be-8648-42f2-9a10-3c21306003b9</xr:TypeId>
-				<xr:ValueId>92acbd0f-c7f3-4b8c-b699-5804b4fd3fdd</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecord.Антропометрия" category="Record">
+				<xr:TypeId>da967199-ab38-46bb-832f-3fcdac5371b7</xr:TypeId>
+				<xr:ValueId>4351f827-dc97-4d73-9df5-f90f68e39268</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterManager.КонтрольВосстановления" category="Manager">
-				<xr:TypeId>dcf43cdc-4d34-496b-bcc8-63f9d5486f17</xr:TypeId>
-				<xr:ValueId>aacffe50-52a3-4c90-a622-5ddfad726d42</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterManager.Антропометрия" category="Manager">
+				<xr:TypeId>be8a4b64-b5f2-4668-a7ac-9236c64558e2</xr:TypeId>
+				<xr:ValueId>a369191c-a6b1-4c5b-aa77-3597851ddcb0</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterSelection.КонтрольВосстановления" category="Selection">
-				<xr:TypeId>75b5b09c-1e48-4116-9773-8e480eb4b02a</xr:TypeId>
-				<xr:ValueId>ce3e9046-dfe8-4109-bae9-3255039b2956</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterSelection.Антропометрия" category="Selection">
+				<xr:TypeId>379b4e54-0a57-4470-99df-b7016f810f85</xr:TypeId>
+				<xr:ValueId>b591509a-e7b6-4be4-8866-3f2fa449a766</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterList.КонтрольВосстановления" category="List">
-				<xr:TypeId>86649822-8455-4c27-8ef0-780ec3f72ee8</xr:TypeId>
-				<xr:ValueId>cae4347e-c3d7-4647-8516-57e2d89e754f</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterList.Антропометрия" category="List">
+				<xr:TypeId>ac7e1205-cc8a-49b6-8c31-7f1701577ade</xr:TypeId>
+				<xr:ValueId>101aa1ac-368d-40eb-8a83-964d937ae0ec</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordSet.КонтрольВосстановления" category="RecordSet">
-				<xr:TypeId>b6537c78-5436-4d9c-8663-8cfaddd18add</xr:TypeId>
-				<xr:ValueId>9c0cae24-4115-4d61-b4b7-3ffc65bd04ad</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordSet.Антропометрия" category="RecordSet">
+				<xr:TypeId>26dabc8a-94a3-4da7-9b0a-2abfed86fd27</xr:TypeId>
+				<xr:ValueId>8f7faa86-b01b-44e4-ae45-a3015b5bd320</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordKey.КонтрольВосстановления" category="RecordKey">
-				<xr:TypeId>6eb476e0-6f89-419c-ad1c-b983ebaeae30</xr:TypeId>
-				<xr:ValueId>770d206a-a28d-4520-8e61-5e1e59bcd42c</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordKey.Антропометрия" category="RecordKey">
+				<xr:TypeId>3d4d992d-ab6d-45db-91a4-86d127a1be86</xr:TypeId>
+				<xr:ValueId>75fe47a5-d674-4a31-8b65-f49e4b62e4bd</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordManager.КонтрольВосстановления" category="RecordManager">
-				<xr:TypeId>3b8bd396-f7aa-4dfb-a1fe-74160a761b94</xr:TypeId>
-				<xr:ValueId>34acd29f-60b2-4079-915b-b24feb75ce13</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordManager.Антропометрия" category="RecordManager">
+				<xr:TypeId>8e083033-f02e-4113-81ca-91c444e442f6</xr:TypeId>
+				<xr:ValueId>e7b27e07-e352-40dc-a6bd-0e249107c5b4</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>КонтрольВосстановления</Name>
+			<Name>Антропометрия</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Контроль восстановления</v8:content>
+					<v8:content>Антропометрия</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -46,8 +46,8 @@
 			<DefaultListForm/>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
-			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
-			<WriteMode>Independent</WriteMode>
+			<InformationRegisterPeriodicity>Day</InformationRegisterPeriodicity>
+			<WriteMode>RecorderSubordinate</WriteMode>
 			<MainFilterOnPeriod>false</MainFilterOnPeriod>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<DataLockControlMode>Managed</DataLockControlMode>
@@ -64,18 +64,18 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="a685cb7a-bd81-42ad-8dba-91b63ef4f1b5">
+			<Resource uuid="7cd7c0ad-632c-4b41-879a-d7e1cd9675a4">
 				<Properties>
-					<Name>ГруппаМышц</Name>
+					<Name>Значение</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа мышц</v8:content>
+							<v8:content>Значение</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.ГруппаМышц</v8:Type>
+						<v8:TypeSet>cfg:Characteristic.ДополнительныеРеквизитыИСведения</v8:TypeSet>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -103,18 +103,18 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Dimension uuid="959f4d69-672c-4a00-b0cc-09ddb7a82f52">
+			<Dimension uuid="5ad76a9b-d1f4-4e01-a0a5-829b2bf482de">
 				<Properties>
-					<Name>Стиль</Name>
+					<Name>Спортсмен</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Стиль</v8:content>
+							<v8:content>Спортсмен</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Стиль</v8:Type>
+						<v8:Type>cfg:CatalogRef.Спортсмен</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -145,18 +145,18 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="02a8d46d-e0e8-4a07-8437-2acf6c6ff6bf">
+			<Dimension uuid="c51eb638-1b2d-4863-992b-000fb86b2362">
 				<Properties>
-					<Name>Упражнение</Name>
+					<Name>ПВХ</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Упражнение</v8:content>
+							<v8:content>ПВХ</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Упражнение</v8:Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

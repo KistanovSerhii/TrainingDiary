@@ -92,37 +92,9 @@
 				<dcscom:periodType>Main</dcscom:periodType>
 			</role>
 		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ДатаРождения</dataPath>
-			<field>ДатаРождения</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Дата рождения</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ПВХ</dataPath>
-			<field>ПВХ</field>
-		</field>
 		<dataSource>ИсточникДанных1</dataSource>
-		<query>ВЫБРАТЬ ПЕРВЫЕ 1
-	ТАнтропометрия.Спортсмен КАК Спортсмен,
-	ТАнтропометрия.Значение КАК ДатаРождения
-ПОМЕСТИТЬ ВТДатаРождения
-ИЗ
-	РегистрСведений.Антропометрия.СрезПоследних(
-			{(&amp;ДатаОкончания)},
-			Спортсмен = &amp;Спортсмен
-				И ПВХ = ЗНАЧЕНИЕ(ПланВидовХарактеристик.ДополнительныеРеквизитыИСведения.ДатаРождения) {(Спортсмен = &amp;Спортсмен
-			    И ПВХ = ЗНАЧЕНИЕ(ПланВидовХарактеристик.ДополнительныеРеквизитыИСведения.ДатаРождения))}) КАК ТАнтропометрия
-;
-
-////////////////////////////////////////////////////////////////////////////////
-ВЫБРАТЬ
+		<query>ВЫБРАТЬ
 	Тренировка.Спортсмен КАК Спортсмен,
-	ТДатаРождения.ДатаРождения КАК ДатаРождения,
 	Тренировка.Упражнение КАК Упражнение,
 	Тренировка.Стиль КАК Стиль,
 	Тренировка.ЕдИзм КАК ЕдИзм,
@@ -132,8 +104,6 @@
 	Тренировка.Регистратор КАК Тренировка
 ИЗ
 	РегистрНакопления.Тренировка КАК Тренировка
-		ЛЕВОЕ СОЕДИНЕНИЕ ВТДатаРождения КАК ТДатаРождения
-		ПО Тренировка.Спортсмен = ТДатаРождения.Спортсмен
 ГДЕ
 	Тренировка.Спортсмен = &amp;Спортсмен
 	И Тренировка.Упражнение = &amp;Упражнение
@@ -147,16 +117,6 @@
 	Стиль,
 	ЕдИзм</query>
 	</dataSet>
-	<calculatedField>
-		<dataPath>Вес</dataPath>
-		<expression>ОбщегоНазначения.ПолучитьВесСпортсменаСрезПоследних(ДатаТренировки, Спортсмен)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Вес</v8:content>
-			</v8:item>
-		</title>
-	</calculatedField>
 	<calculatedField>
 		<dataPath>ВесСнарядаВсего</dataPath>
 		<expression>ВесСнаряда</expression>
@@ -206,16 +166,6 @@
 			<v8:item>
 				<v8:lang>ru</v8:lang>
 				<v8:content>Сделано всего</v8:content>
-			</v8:item>
-		</title>
-	</calculatedField>
-	<calculatedField>
-		<dataPath>Возраст</dataPath>
-		<expression>ОбщегоНазначения.ВычислитьВозраст(ДатаРождения)</expression>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Возраст</v8:content>
 			</v8:item>
 		</title>
 	</calculatedField>
@@ -516,21 +466,15 @@
 				<dcsset:item xsi:type="dcsset:StructureItemGroup">
 					<dcsset:groupItems>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Тренировка</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:use>false</dcsset:use>
 							<dcsset:field>Спортсмен</dcsset:field>
-							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Возраст</dcsset:field>
-							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Вес</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>

@@ -14,6 +14,18 @@
 		</Type>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="fe9688aa-7701-4adb-bf95-da409be9d81c">
+		<Name>ДатаРождения</Name>
+		<Code/>
+		<Description>Дата рождения</Description>
+		<Type>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
 	<Item id="f5e93e0f-e4c5-46f5-b43a-320bffe36937">
 		<Name>ОбъемБицепса</Name>
 		<Code/>
